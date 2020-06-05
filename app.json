@@ -21,7 +21,13 @@
     "assetBundlePatterns": [
       "**/*"
     ],
+    "android": {
+      "package": "com.luanws.ecoleta",
+      "versionCode": 1
+    },
     "ios": {
+      "bundleIdentifier": "com.luanws.ecoleta",
+      "buildNumber": "1.0.0",
       "supportsTablet": true
     }
   }
