@@ -10,7 +10,13 @@ const Routes = () => {
     return (
         <NavigationContainer>
             <AppStack.Navigator>
-                <AppStack.Screen name="Home" component={Home} />
+                <AppStack.Screen
+                    name="Home"
+                    component={Home}
+                    options={{
+                        title: "Início"
+                    }}
+                />
             </AppStack.Navigator>
         </NavigationContainer>
     )
