@@ -22,11 +22,11 @@
       "**/*"
     ],
     "android": {
-      "package": "com.luanws.ecoleta",
+      "package": "com.luanws.calculadoracestos",
       "versionCode": 1
     },
     "ios": {
-      "bundleIdentifier": "com.luanws.ecoleta",
+      "bundleIdentifier": "com.luanws.calculadoracestos",
       "buildNumber": "1.0.0",
       "supportsTablet": true
     }
