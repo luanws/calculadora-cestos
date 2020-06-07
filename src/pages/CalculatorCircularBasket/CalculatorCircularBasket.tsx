@@ -51,26 +51,18 @@ const CalculatorCircularBasket = () => {
                 <View style={{ padding: 8 }}>
                     <View style={styles.containerShowNumber}>
                         <ShowNumber top unit="cm" name="Diâmetro">{maskNumber(diameter)}</ShowNumber>
-                        <ShowNumber name="Diâmetro">{maskNumber(diameter)}</ShowNumber>
-                        <ShowNumber name="Diâmetro">{maskNumber(diameter)}</ShowNumber>
-                        <ShowNumber name="Diâmetro">{maskNumber(diameter)}</ShowNumber>
+                        <ShowNumber unit="cm²" name="Área da base">{maskNumber(baseArea)}</ShowNumber>
+
+                        <ShowNumber unit="cm²" name="Área lateral">{maskNumber(sideArea)}</ShowNumber>
+                        <ShowNumber unit="cm²" name="Área total">{maskNumber(totalArea)}</ShowNumber>
+                        <ShowNumber unit="Kg" name="Peso em fio">{maskNumber(wireWeight)}</ShowNumber>
+                        <ShowNumber unit="h" name="Tempo estimado">{maskNumber(estimulatedTime)}</ShowNumber>
+                        <ShowNumber unit="h" name="Tempo real">{maskNumber(realTime)}</ShowNumber>
+                        <ShowNumber name="Preço em fio">R$ {maskNumber(wirePrice)}</ShowNumber>
+                        <ShowNumber name="Preço mão de obra">R$ {maskNumber(laborPrice)}</ShowNumber>
+                        <ShowNumber name="Total sem lucro">R$ {maskNumber(totalWithoutProfit)}</ShowNumber>
+                        <ShowNumber name="Preço máximo">R$ {maskNumber(maxPrice)}</ShowNumber>
                     </View>
-                    <Text></Text>
-
-                    <Text>Diâmetro (cm): {maskNumber(diameter)}</Text>
-                    <Text>Altura (cm): {maskNumber(height)}</Text>
-                    <Text></Text>
-
-                    <Text>Área da base (cm²): {maskNumber(baseArea)}</Text>
-                    <Text>Área lateral (cm²): {maskNumber(sideArea)}</Text>
-                    <Text>Área total (cm²): {maskNumber(totalArea)}</Text>
-                    <Text>Peso em fio (Kg): {maskNumber(wireWeight)}</Text>
-                    <Text>Tempo estimado (h): {maskNumber(estimulatedTime)}</Text>
-                    <Text>Tempo real (h): {maskNumber(realTime)}</Text>
-                    <Text>Preco em fio: {maskNumber(wirePrice)}</Text>
-                    <Text>Preço mão de obra: {maskNumber(laborPrice)}</Text>
-                    <Text>Total sem lucro: {maskNumber(totalWithoutProfit)}</Text>
-                    <Text>Preço máximo: {maskNumber(maxPrice)}</Text>
                 </View>
             </ScrollView>
         </SafeAreaView>
