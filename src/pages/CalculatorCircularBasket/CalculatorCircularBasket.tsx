@@ -43,23 +43,26 @@ const CalculatorCircularBasket = () => {
 
     return (
         <SafeAreaView>
-            <View style={{ margin: 8 }}>
+            <ScrollView style={{ margin: 8 }}>
                 <NumberInput onChangeNumber={setDiameter} placeholder="Diâmetro (cm)" inputName="Diâmetro" />
                 <NumberInput onChangeNumber={setHeight} placeholder="Altura (cm)" inputName="Altura" />
-                <Text>Diâmetro (cm): {diameter}</Text>
-                <Text>Altura (cm): {height}</Text>
 
-                <Text>Área da base (cm²): {maskNumber(baseArea)}</Text>
-                <Text>Área lateral (cm²): {maskNumber(sideArea)}</Text>
-                <Text>Área total (cm²): {maskNumber(totalArea)}</Text>
-                <Text>Peso em fio (Kg): {maskNumber(wireWeight)}</Text>
-                <Text>Tempo estimado (h): {maskNumber(estimulatedTime)}</Text>
-                <Text>Tempo real (h): {maskNumber(realTime)}</Text>
-                <Text>Preco em fio: {maskNumber(wirePrice)}</Text>
-                <Text>Preço mão de obra: {maskNumber(laborPrice)}</Text>
-                <Text>Total sem lucro: {maskNumber(totalWithoutProfit)}</Text>
-                <Text>Preço máximo: {maskNumber(maxPrice)}</Text>
-            </View>
+                <View style={{ padding: 8 }}>
+                    <Text>Diâmetro (cm): {diameter}</Text>
+                    <Text>Altura (cm): {height}</Text>
+                    <Text></Text>
+                    <Text>Área da base (cm²): {maskNumber(baseArea)}</Text>
+                    <Text>Área lateral (cm²): {maskNumber(sideArea)}</Text>
+                    <Text>Área total (cm²): {maskNumber(totalArea)}</Text>
+                    <Text>Peso em fio (Kg): {maskNumber(wireWeight)}</Text>
+                    <Text>Tempo estimado (h): {maskNumber(estimulatedTime)}</Text>
+                    <Text>Tempo real (h): {maskNumber(realTime)}</Text>
+                    <Text>Preco em fio: {maskNumber(wirePrice)}</Text>
+                    <Text>Preço mão de obra: {maskNumber(laborPrice)}</Text>
+                    <Text>Total sem lucro: {maskNumber(totalWithoutProfit)}</Text>
+                    <Text>Preço máximo: {maskNumber(maxPrice)}</Text>
+                </View>
+            </ScrollView>
         </SafeAreaView>
     )
 }
