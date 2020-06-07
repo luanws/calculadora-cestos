@@ -9,10 +9,12 @@ const styles = StyleSheet.create({
         zIndex: 1,
         marginLeft: 8,
         paddingHorizontal: 8,
-        borderRadius: 3
+        borderRadius: 3,
+        flexDirection: 'row',
     },
     textName: {
-        color: 'white'
+        color: 'white',
+        textAlignVertical: 'center'
     },
     containerValue: {
         borderRadius: 5,
@@ -31,6 +33,10 @@ const styles = StyleSheet.create({
         fontSize: 15,
         fontStyle: 'italic',
         textAlignVertical: 'bottom'
+    },
+    icon: {
+        marginRight: 8,
+        marginVertical: 4
     },
     noneType: {
         backgroundColor: colors.primaryDark,

@@ -50,6 +50,7 @@ const CalculatorCircularBasket = () => {
 
                 <View style={{ padding: 8 }}>
                     <View style={styles.containerShowNumber}>
+                        <ShowNumber unit="cm²" name="Área da base">{maskNumber(baseArea)}</ShowNumber>
                         <ShowNumber unit="cm²" name="Área lateral">{maskNumber(sideArea)}</ShowNumber>
                         <ShowNumber unit="cm²" name="Área total">{maskNumber(totalArea)}</ShowNumber>
                         <ShowNumber type="weight" unit="Kg" name="Peso em fio">{maskNumber(wireWeight)}</ShowNumber>

@@ -1,5 +1,6 @@
 import React from 'react'
 import { View, Text, StyleProp, ViewStyle } from 'react-native'
+import { AntDesign, FontAwesome5, FontAwesome, Entypo } from '@expo/vector-icons';
 
 import styles from './styles'
 
@@ -12,6 +13,20 @@ interface Props {
 
 const ShowNumber: React.FC<Props> = (props) => {
     const styleType = getStyleType()
+    const IconType = getIconType()
+
+    function getIconType() {
+        switch (props.type) {
+            case 'time':
+                return <AntDesign style={styles.icon} name="clockcircle" size={16} color="white" />
+            case 'weight':
+                return <FontAwesome5 style={styles.icon} name="weight-hanging" size={16} color="white" />
+            case 'money':
+                return <FontAwesome style={styles.icon} name="money" size={16} color="white" />
+            default:
+                return <Entypo style={styles.icon} name="ruler" size={16} color="white" />
+        }
+    }
 
     function getStyleType() {
         switch (props.type) {
@@ -34,6 +49,7 @@ const ShowNumber: React.FC<Props> = (props) => {
                 zIndex: 1
             }}>
                 <View style={[styles.containerName, styleType]}>
+                    {getIconType()}
                     <Text style={styles.textName}>{props.name}</Text>
                 </View>
             </View>
