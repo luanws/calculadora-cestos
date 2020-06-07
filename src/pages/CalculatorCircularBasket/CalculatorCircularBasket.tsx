@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { View, Text, ScrollView, SafeAreaView, TextInput } from 'react-native'
 import NumberInput from '../../components/NumberInput/NumberInput'
+import ShowNumber from '../../components/ShowNumber/ShowNumber'
 
 import CircularBasket from '../../models/CircularBasket'
 import styles from './styles'
@@ -48,9 +49,18 @@ const CalculatorCircularBasket = () => {
                 <NumberInput onChangeNumber={setHeight} placeholder="Altura (cm)" inputName="Altura" />
 
                 <View style={{ padding: 8 }}>
+                    <View style={styles.containerShowNumber}>
+                        <ShowNumber top unit="cm" name="Diâmetro">{maskNumber(diameter)}</ShowNumber>
+                        <ShowNumber name="Diâmetro">{maskNumber(diameter)}</ShowNumber>
+                        <ShowNumber name="Diâmetro">{maskNumber(diameter)}</ShowNumber>
+                        <ShowNumber name="Diâmetro">{maskNumber(diameter)}</ShowNumber>
+                    </View>
+                    <Text></Text>
+
                     <Text>Diâmetro (cm): {maskNumber(diameter)}</Text>
                     <Text>Altura (cm): {maskNumber(height)}</Text>
                     <Text></Text>
+
                     <Text>Área da base (cm²): {maskNumber(baseArea)}</Text>
                     <Text>Área lateral (cm²): {maskNumber(sideArea)}</Text>
                     <Text>Área total (cm²): {maskNumber(totalArea)}</Text>
