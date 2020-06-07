@@ -61,7 +61,7 @@ const CalculatorSquareBasket = () => {
                         <ShowNumber type="time" unit="h" name="Tempo real">{maskNumber(realTime)}</ShowNumber>
                         <ShowNumber type="money" name="Preço em fio">R$ {maskNumber(wirePrice)}</ShowNumber>
                         <ShowNumber type="money" name="Preço mão de obra">R$ {maskNumber(laborPrice)}</ShowNumber>
-                        <ShowNumber type="money" name="Total sem lucro">R$ {maskNumber(totalWithoutProfit)}</ShowNumber>
+                        <ShowNumber type="money" name="Preço sem lucro">R$ {maskNumber(totalWithoutProfit)}</ShowNumber>
                         <ShowNumber type="money" name="Preço máximo">R$ {maskNumber(maxPrice)}</ShowNumber>
                     </View>
                 </View>
