@@ -38,7 +38,8 @@ class CircularBasket {
     }
 
     private getMaxPrice(price: number): number {
-        if (price < 6) return 12
+        if (price == 0) return 0
+        else if (price < 6) return 12
         else if (price < 10) return 15
         else if (price < 12) return 18
         else if (price < 15) return 22
