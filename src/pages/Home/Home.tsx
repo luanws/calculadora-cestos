@@ -1,9 +1,15 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { View, Text, ScrollView, SafeAreaView } from 'react-native'
 
 const Home = () => {
     return (
-        <Text>Home</Text>
+        <SafeAreaView>
+            <ScrollView>
+                <View>
+                    <Text>Calculadora de cestos</Text>
+                </View>
+            </ScrollView>
+        </SafeAreaView>
     )
 }
 
