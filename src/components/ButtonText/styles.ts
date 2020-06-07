@@ -5,17 +5,18 @@ import colors from '../../res/colors'
 
 const styles = StyleSheet.create({
     button: {
-        backgroundColor: colors.transparent,
+        backgroundColor: colors.primary,
+        borderColor: colors.primaryDark,
         borderRadius: 5,
-        padding: 8,
+        padding: 32,
         margin: 8,
         color: 'white',
         alignItems: 'center',
         borderWidth: 2,
-        borderColor: colors.primary,
     },
     textButton: {
-        color: colors.primary
+        color: 'white',
+        fontSize: 15
     }
 })
 

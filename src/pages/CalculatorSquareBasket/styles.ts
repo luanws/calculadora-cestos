@@ -5,7 +5,7 @@ import colors from '../../res/colors'
 
 const styles = StyleSheet.create({
     textInput: {
-        backgroundColor: colors.background,
+        backgroundColor: colors.transparent,
         borderColor: colors.primary,
         borderWidth: 2,
         borderRadius: 5,
