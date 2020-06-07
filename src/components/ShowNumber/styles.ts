@@ -25,12 +25,12 @@ const styles = StyleSheet.create({
     },
     textValue: {
         color: 'white',
-        fontSize: 30,
+        fontSize: 20,
         fontWeight: 'bold'
     },
     textUnit: {
         color: 'white',
-        fontSize: 20,
+        fontSize: 15,
         fontStyle: 'italic',
         textAlignVertical: 'bottom'
     },
