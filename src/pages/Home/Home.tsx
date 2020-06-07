@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, ScrollView, SafeAreaView } from 'react-native'
+import { View, ScrollView, SafeAreaView } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
 import ButtonText from '../../components/ButtonText/ButtonText'
 
@@ -12,12 +12,16 @@ const Home = () => {
         navigation.navigate('CalculatorSquareBasket')
     }
 
+    function navigateCalculatorCircularBasket() {
+        navigation.navigate('CalculatorCircularBasket')
+    }
+
     return (
         <SafeAreaView>
             <ScrollView>
                 <View>
+                    <ButtonText onPress={navigateCalculatorCircularBasket}>Cestos circulares</ButtonText>
                     <ButtonText onPress={navigateCalculatorSquareBasket}>Cestos quadrados</ButtonText>
-                    <ButtonText onPress={() => { }}>Cestos circulares</ButtonText>
                 </View>
             </ScrollView>
         </SafeAreaView>

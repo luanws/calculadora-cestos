@@ -6,6 +6,7 @@ import colors from './res/colors'
 
 import Home from './pages/Home/Home'
 import CalculatorSquareBasket from './pages/CalculatorSquareBasket/CalculatorSquareBasket'
+import CalculatorCircularBasket from './pages/CalculatorCircularBasket/CalculatorCircularBasket'
 
 const Stack = createStackNavigator()
 
@@ -23,6 +24,7 @@ const Routes = () => {
             }}>
                 <Stack.Screen name="Home" component={Home} options={{ title: "Início" }} />
                 <Stack.Screen name="CalculatorSquareBasket" component={CalculatorSquareBasket} options={{ title: "Cestos quadrados" }} />
+                <Stack.Screen name="CalculatorCircularBasket" component={CalculatorCircularBasket} options={{ title: "Cestos circulares" }} />
             </Stack.Navigator>
         </NavigationContainer>
     )

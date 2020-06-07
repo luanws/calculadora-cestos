@@ -3,7 +3,7 @@ import { View, Text, ScrollView, SafeAreaView, TextInput } from 'react-native'
 
 import styles from './styles'
 
-const CalculatorSquareBasket = () => {
+const CalculatorCircularBasket = () => {
     return (
         <SafeAreaView>
             <TextInput style={styles.textInput} placeholder="Input"></TextInput>
@@ -12,4 +12,4 @@ const CalculatorSquareBasket = () => {
     )
 }
 
-export default CalculatorSquareBasket
+export default CalculatorCircularBasket
