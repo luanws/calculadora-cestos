@@ -1,23 +1,31 @@
 import React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
+import ActionBar from './components/ActionBar/ActionBar'
+import colors from './res/colors'
+
 
 import Home from './pages/Home/Home'
 
-const AppStack = createStackNavigator()
+const Stack = createStackNavigator()
 
 const Routes = () => {
     return (
         <NavigationContainer>
-            <AppStack.Navigator>
-                <AppStack.Screen
+            <Stack.Navigator screenOptions={{
+                headerTintColor: 'white',
+                headerStyle: {
+                    backgroundColor: colors.primary
+                }
+            }}>
+                <Stack.Screen
                     name="Home"
                     component={Home}
                     options={{
                         title: "Início"
                     }}
                 />
-            </AppStack.Navigator>
+            </Stack.Navigator>
         </NavigationContainer>
     )
 }
