@@ -1,7 +1,6 @@
 import React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
-import ActionBar from './components/ActionBar/ActionBar'
 import colors from './res/colors'
 
 
@@ -16,6 +15,9 @@ const Routes = () => {
                 headerTintColor: 'white',
                 headerStyle: {
                     backgroundColor: colors.primary
+                },
+                cardStyle: {
+                    backgroundColor: colors.background
                 }
             }}>
                 <Stack.Screen
