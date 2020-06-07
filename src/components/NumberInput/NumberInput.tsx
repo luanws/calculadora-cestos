@@ -5,12 +5,19 @@ import styles from './styles'
 
 interface Props {
     placeholder?: string,
-    inputName: string
+    inputName: string,
+    value?: string,
+    onChangeNumber?: (n: number) => void
 }
 
 const NumberInput: React.FC<Props> = (props) => {
+    function stringToNumber(text: string): number {
+        text = text.replace(',', '.')
+        return Number(text)
+    }
+
     return (
-        <View style={styles.container}>
+        <View>
             <View style={{
                 flexDirection: 'row',
                 justifyContent: 'flex-start',
@@ -24,6 +31,8 @@ const NumberInput: React.FC<Props> = (props) => {
                 style={styles.textInput}
                 placeholder={props.placeholder ? props.placeholder : props.inputName}
                 keyboardType="numeric"
+                value={props.value}
+                onChangeText={text => { if (props.onChangeNumber) props.onChangeNumber(stringToNumber(text)) }}
             />
         </View>
     )

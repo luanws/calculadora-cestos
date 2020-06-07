@@ -101,8 +101,10 @@ class CircularBasket {
         this._wirePrice = (this._totalArea / 2800) * 20
         this._laborPrice = Math.max(this._estimulatedTime, this._realTime) * 10
         this._totalWithoutProfit = this._wirePrice + this._laborPrice
-        
+
         // this._maxPrice = this._totalWithoutProfit < 80 ? this._totalWithoutProfit : this._totalWithoutProfit * 1.25
         this._maxPrice = this.getMaxPrice(this._totalWithoutProfit)
     }
 }
+
+export default CircularBasket

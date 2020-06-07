@@ -4,9 +4,6 @@ import { StyleSheet } from 'react-native'
 import colors from '../../res/colors'
 
 const styles = StyleSheet.create({
-    container: {
-        margin: 8,
-    },
     textInput: {
         backgroundColor: colors.transparent,
         borderColor: colors.primary,
