@@ -48,8 +48,8 @@ const CalculatorCircularBasket = () => {
                 <NumberInput onChangeNumber={setHeight} placeholder="Altura (cm)" inputName="Altura" />
 
                 <View style={{ padding: 8 }}>
-                    <Text>Diâmetro (cm): {diameter}</Text>
-                    <Text>Altura (cm): {height}</Text>
+                    <Text>Diâmetro (cm): {maskNumber(diameter)}</Text>
+                    <Text>Altura (cm): {maskNumber(height)}</Text>
                     <Text></Text>
                     <Text>Área da base (cm²): {maskNumber(baseArea)}</Text>
                     <Text>Área lateral (cm²): {maskNumber(sideArea)}</Text>
