@@ -2,13 +2,13 @@ import React from 'react'
 import { StatusBar } from 'react-native'
 
 import Routes from './src/routes'
+import colors from './src/res/colors'
 
 export default function App() {
     return (
         <>
-            {/* <StatusBar></StatusBar> */}
+            <StatusBar backgroundColor={colors.primary}></StatusBar>
             <Routes />
         </>
     )
 }
- 
