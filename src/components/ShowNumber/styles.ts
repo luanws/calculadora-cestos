@@ -5,7 +5,6 @@ import colors from '../../res/colors'
 
 const styles = StyleSheet.create({
     containerName: {
-        backgroundColor: colors.primary,
         marginBottom: -10,
         zIndex: 1,
         marginLeft: 8,
@@ -16,7 +15,6 @@ const styles = StyleSheet.create({
         color: 'white'
     },
     containerValue: {
-        backgroundColor: colors.primary,
         borderRadius: 5,
         paddingTop: 12,
         padding: 8,
@@ -33,6 +31,18 @@ const styles = StyleSheet.create({
         fontSize: 15,
         fontStyle: 'italic',
         textAlignVertical: 'bottom'
+    },
+    noneType: {
+        backgroundColor: colors.primaryDark,
+    },
+    moneyType: {
+        backgroundColor: colors.successDark
+    },
+    timeType: {
+        backgroundColor: colors.dangerDark
+    },
+    weightType: {
+        backgroundColor: colors.warningDark
     },
 })
 
