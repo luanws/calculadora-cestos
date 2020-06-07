@@ -7,19 +7,22 @@ import styles from './styles'
 
 const CalculatorCircularBasket = () => {
     const [diameter, setDiameter] = useState(0)
+    const [height, setHeight] = useState(0)
 
     const circularBasket = new CircularBasket()
 
     useEffect(() => {
         circularBasket.diameter = diameter
-        console.log('opa')
-    }, [diameter])
+        circularBasket.height = height
+    }, [diameter, height])
 
     return (
         <SafeAreaView>
             <View style={{ margin: 8 }}>
                 <NumberInput onChangeNumber={setDiameter} inputName="Diâmetro" />
-                <Text>{circularBasket.diameter}</Text>
+                <NumberInput onChangeNumber={setHeight} inputName="Altura" />
+                <Text>Diâmetro: {diameter}</Text>
+                <Text>Altura: {height}</Text>
             </View>
         </SafeAreaView>
     )
