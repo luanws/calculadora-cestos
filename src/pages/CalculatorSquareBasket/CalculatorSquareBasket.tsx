@@ -47,8 +47,8 @@ const CalculatorSquareBasket = () => {
     return (
         <SafeAreaView>
             <ScrollView style={{ margin: 8 }}>
-                <NumberInput onChangeNumber={setSide1} placeholder="Lado 1 (cm)" inputName="Diâmetro" />
-                <NumberInput onChangeNumber={setSide2} placeholder="Lado 2 (cm)" inputName="Diâmetro" />
+                <NumberInput onChangeNumber={setSide1} placeholder="Lado 1 (cm)" inputName="Lado 1" />
+                <NumberInput onChangeNumber={setSide2} placeholder="Lado 2 (cm)" inputName="Lado 2" />
                 <NumberInput onChangeNumber={setHeight} placeholder="Altura (cm)" inputName="Altura" />
 
                 <View style={{ padding: 8 }}>
