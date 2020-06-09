@@ -55,7 +55,9 @@ const ShowNumber: React.FC<Props> = (props) => {
             </View>
             <View style={[styles.containerValue, styleType]}>
                 <Text style={styles.textValue}>{props.children}</Text>
-                <Text style={styles.textUnit}> {props.unit}</Text>
+                <View style={styles.containerUnit}>
+                    <Text style={styles.textUnit}> {props.unit}</Text>
+                </View>
             </View>
         </View>
     )

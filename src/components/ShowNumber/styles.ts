@@ -14,7 +14,6 @@ const styles = StyleSheet.create({
     },
     textName: {
         color: 'white',
-        textAlignVertical: 'center'
     },
     containerValue: {
         borderRadius: 5,
@@ -28,11 +27,13 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontWeight: 'bold'
     },
+    containerUnit: {
+        justifyContent: 'flex-end'
+    },
     textUnit: {
         color: 'white',
         fontSize: 15,
-        fontStyle: 'italic',
-        textAlignVertical: 'bottom'
+        fontStyle: 'italic'
     },
     icon: {
         marginRight: 8,
