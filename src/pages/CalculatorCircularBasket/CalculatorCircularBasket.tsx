@@ -55,7 +55,6 @@ const CalculatorCircularBasket = () => {
                         <ShowNumber unit="cm²" name="Área total">{maskNumber(totalArea)}</ShowNumber>
                         <ShowNumber type="weight" unit="Kg" name="Peso em fio">{maskNumber(wireWeight)}</ShowNumber>
                         <ShowNumber type="time" unit="h" name="Tempo estimado">{maskNumber(estimulatedTime)}</ShowNumber>
-                        <ShowNumber type="time" unit="h" name="Tempo real">{maskNumber(realTime)}</ShowNumber>
                         <ShowNumber type="money" name="Preço em fio">R$ {maskNumber(wirePrice)}</ShowNumber>
                         <ShowNumber type="money" name="Preço mão de obra">R$ {maskNumber(laborPrice)}</ShowNumber>
                         <ShowNumber type="money" name="Preço sem lucro">R$ {maskNumber(totalWithoutProfit)}</ShowNumber>
