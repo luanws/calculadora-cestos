@@ -1,0 +1,33 @@
+{
+  "files": {
+    "app.js": "/calculadora-cestos/static/js/app.e77ab5d8.chunk.js",
+    "app.js.map": "/calculadora-cestos/static/js/app.e77ab5d8.chunk.js.map",
+    "runtime~app.js": "/calculadora-cestos/static/js/runtime~app.5d68ffa3.js",
+    "runtime~app.js.map": "/calculadora-cestos/static/js/runtime~app.5d68ffa3.js.map",
+    "static/js/2.9bc784d7.chunk.js": "/calculadora-cestos/static/js/2.9bc784d7.chunk.js",
+    "static/js/2.9bc784d7.chunk.js.map": "/calculadora-cestos/static/js/2.9bc784d7.chunk.js.map",
+    "fonts/AntDesign.ttf": "/calculadora-cestos/./fonts/AntDesign.ttf",
+    "fonts/Entypo.ttf": "/calculadora-cestos/./fonts/Entypo.ttf",
+    "fonts/Feather.ttf": "/calculadora-cestos/./fonts/Feather.ttf",
+    "fonts/FontAwesome.ttf": "/calculadora-cestos/./fonts/FontAwesome.ttf",
+    "fonts/FontAwesome5_Brands.ttf": "/calculadora-cestos/./fonts/FontAwesome5_Brands.ttf",
+    "fonts/FontAwesome5_Solid.ttf": "/calculadora-cestos/./fonts/FontAwesome5_Solid.ttf",
+    "fonts/Fontisto.ttf": "/calculadora-cestos/./fonts/Fontisto.ttf",
+    "fonts/Foundation.ttf": "/calculadora-cestos/./fonts/Foundation.ttf",
+    "fonts/Ionicons.ttf": "/calculadora-cestos/./fonts/Ionicons.ttf",
+    "fonts/MaterialCommunityIcons.ttf": "/calculadora-cestos/./fonts/MaterialCommunityIcons.ttf",
+    "fonts/MaterialIcons.ttf": "/calculadora-cestos/./fonts/MaterialIcons.ttf",
+    "fonts/SimpleLineIcons.ttf": "/calculadora-cestos/./fonts/SimpleLineIcons.ttf",
+    "favicon-16.png": "/calculadora-cestos/favicon-16.png",
+    "favicon-32.png": "/calculadora-cestos/favicon-32.png",
+    "favicon.ico": "/calculadora-cestos/favicon.ico",
+    "index.html": "/calculadora-cestos/index.html",
+    "manifest.json": "/calculadora-cestos/manifest.json",
+    "serve.json": "/calculadora-cestos/serve.json"
+  },
+  "entrypoints": [
+    "static/js/runtime~app.5d68ffa3.js",
+    "static/js/2.9bc784d7.chunk.js",
+    "static/js/app.e77ab5d8.chunk.js"
+  ]
+}
