@@ -5,12 +5,15 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "desktop": "yarn expo-electron start",
+    "build:desktop": "yarn electron-webpack && yarn electron-builder --dir -c.compression=store -c.mac.identity=null"
   },
   "dependencies": {
     "@react-native-community/masked-view": "^0.1.10",
     "@react-navigation/native": "^5.5.0",
     "@react-navigation/stack": "^5.4.1",
+    "electron": "^6.0.12",
     "expo": "~37.0.3",
     "react": "~16.9.0",
     "react-dom": "~16.9.0",
@@ -22,6 +25,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.8.6",
+    "@expo/electron-adapter": "^0.0.0",
+    "@expo/webpack-config": "^0.12.13",
     "@types/react": "~16.9.23",
     "@types/react-native": "~0.61.17",
     "babel-preset-expo": "~8.1.0",

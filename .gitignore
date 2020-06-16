@@ -117,3 +117,11 @@ dist
 
 # TernJS port file
 .tern-port
+
+# @generated: @expo/electron-adapter@0.0.0
+/.expo/*
+# Expo Web
+/web-build/*
+# electron-webpack
+/dist
+# @end @expo/electron-adapter
